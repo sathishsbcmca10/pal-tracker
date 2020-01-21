@@ -6,5 +6,5 @@ applications:
     routes:
       - route: pal-tracker-ss.apps.evans.pal.pivotal.io
     env:
-      WELCOME_MESSAGE: Hello from the review environment
+      WELCOME_MESSAGE: Hello from the review environment 123
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
