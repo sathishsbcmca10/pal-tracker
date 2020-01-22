@@ -38,13 +38,14 @@ public class TimeEntryController {
     public ResponseEntity<List<TimeEntry>> list()
     {
         List<TimeEntry> teList = timeEntryRepository.list();
-        if (teList.size() != 0) {
+//        if (teList.size() != 0)
+//        {
             return new ResponseEntity<>(teList,HttpStatus.OK);
-        }
-        else
-        {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+//        }
+//        else
+//        {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
     }
 
     @PutMapping(path= "/time-entries/{id}")
